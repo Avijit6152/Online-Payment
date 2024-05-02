@@ -46,3 +46,26 @@
     var expirationDate = month + "/" + year;
     alert("Expiration Date: " + expirationDate);
   });
+
+  // op.js
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Get amount input and total amount span
+  var amountInput = document.getElementById('amount');
+  var totalAmountSpan = document.getElementById('total-amount');
+
+  // Add event listener to amount input
+  amountInput.addEventListener('input', function() {
+    // Get the entered amount
+    var amount = parseFloat(amountInput.value);
+    
+    // Check if amount is a valid number
+    if (!isNaN(amount)) {
+      // Display the total amount
+      totalAmountSpan.textContent = '$' + amount.toFixed(2);
+    } else {
+      // If amount is not a valid number, display $0.00
+      totalAmountSpan.textContent = '$0.00';
+    }
+  });
+});

@@ -6,7 +6,7 @@ body{
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-image: linear-gradient(to bottom right, #eafa06,#a6fd04);
+    background-image: linear-gradient(to bottom right, #fafafa,#fbfbfc);
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   }
