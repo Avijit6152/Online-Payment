@@ -1,0 +1,135 @@
+/* Add this CSS to your existing stylesheet */
+body{
+    background-image: linear-gradient(to bottom right, #03b6fd,#02fac4);
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, #eafa06,#a6fd04);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 39px;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+  }
+  
+  section {
+    width: 48%; /* Adjust width as needed */
+  }
+
+  .form-row {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  
+  #expYear{
+    margin-left: 10px;
+  }
+
+  .form-row label #expYear{
+
+    margin-left: 20px;
+  }
+  .form-row label {
+    margin-right: 5px;
+    
+  }
+  .form-row input {
+    width: 50px; /* Adjust width as needed */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0a0a0a;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .vertical-line {
+    margin: 20px 20px;
+    border-left: 1px solid rgb(7, 7, 7);
+    height: 450px;
+  }
+  
+ 
+
+  .other-payment-options {
+    border: 1px solid #070707;
+    padding: 10px;
+    background-color: #faf9f9;
+  }
+  
+  .other-payment-options h3 {
+    margin-top: 0;
+  }
+  
+  .other-payment-options p {
+    margin: 5px 0;
+  }
+  
+  .icon {
+    margin-right: 5px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .flex-container {
+      flex-direction: column; /* Stack items vertically on small screens */
+    }
+  
+    section {
+      width: 100%; /* Full width on small screens */
+      margin-bottom: 20px;
+    }
+  
+    .vertical-line {
+      display: none; /* Hide vertical line on small screens */
+    }
+  }
+  
