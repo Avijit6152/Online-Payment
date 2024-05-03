@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header{
+    background-color: #080808;
+    color: #faf8f8;
+    padding: 20px;
+    font-size: 20px;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #919191;
+    color: #080808;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #0a0a0a;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar a:hover {
+    color: #007bff;
+  }
+  
+  .sidebar a i {
+    margin-right: 10px;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .main-content header {
+    margin-bottom: 30px;
+  }
+  
+  .main-content h1 {
+    color: #333;
+  }
+  
+  .main-content section {
+    margin-bottom: 40px;
+  }
+  
+  .main-content h5 {
+    color: #333;
+    margin-bottom: 10px;
+    
+
+  }
+  
+  .main-content p {
+    color: #555;
+  }
+  
+  /* Personal Details */
+  .pd label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .pd input[type="text"],
+  .pd input[type="email"],
+  .pd input[type="tel"],
+  .pd input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .pd button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pd button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Credit/Debit Card */
+
+
+  .cc-form{
+    width: 40%;
+    height: 50%;
+  }
+
+  .form-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cvv{
+
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+
+  .form-rowm,
+  .form-rowy {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+
+  .cd label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .cd input[type="text"],
+  .cd input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .cd button[type="submit"] {
+    background-color: #f09c02;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .cd button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  .cancel{
+    float: right;
+    color: #038eff;
+  }
+  
