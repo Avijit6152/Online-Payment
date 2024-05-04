@@ -1,69 +1,220 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-  }
-  
-  .container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    color: #555;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .form-row {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .form-row .form-group {
-    flex-basis: 48%;
-  }
-  
-  button[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  background-color: #080808;
+  color: #faf8f8;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  margin-top: 30px;
+  border: 1px solid black;
+  height: 550px;
+  width: 65%;
+  margin-left: 15%;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #bebebe;
+  color: #080808;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #0a0a0a;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar a:hover {
+  color: #007bff;
+}
+
+.sidebar a i {
+  margin-right: 10px;
+}
+
+
+/* Add CSS for the powerby section */
+.powerby {
+margin-top: 20px;
+}
+
+.powerby i {
+font-size: 35px;
+margin-right: 10px;
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 20px; 
+}
+
+.main-content header {
+  margin-bottom: 30px;
+}
+
+.main-content h1 {
+  color: #333;
+}
+
+.main-content section {
+  margin-bottom: 40px;
+}
+
+.main-content button {
+  border: none;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #038eff;  
+}
+
+.main-content p {
+  color: #555;
+}
+
+.merchantname {
+  position: absolute;
+  top: 40px;
+  right: 280px;
+  padding: 20px; /* Adjust padding as needed */
+  background-color: #f0f0f0; /* Example background color */
+  border: 1px solid #ececec; /* Example border */
+  border-radius: 5px 5px 0 0; /* Example border radius */
+  width: 200px;
+}
+.merchantname p{
+  font-size: 13px;
+  margin-left: -13px;
+}
+.merchantname h3 {
+ margin-top: -10px;
+ margin-left: -13px;
+ font-size: 13px;
+
+}
+
+.totalamount {
+  position: absolute;
+  top: 124px;
+  right: 280px;
+  background-color: #82c5daad;
+  font-size: 12px;
+  padding: 20px;
+  border-radius:0 0 5px 5px;
+  margin-left: -10px;
+}
+
+
+
+/* Credit/Debit Card */
+
+
+.cc-form{
+  margin-top: 30px;
+  width: 60%;
+  height: 50%;
+}
+
+.cc label {
+  display: inline;
+  margin-bottom: 15px; /* Adjust margin as needed */
+  font-weight: bold; /* Example style */
+}
+
+.cc input
+ {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px; /* Adjust margin as needed */
+  border: 1px solid #ccc; /* Example border */
+  border-radius: 5px; /* Example border radius */
+}
+
+ 
+.form-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center; 
+}
+ 
+.form-rowm input {
+  margin-right: 10px;
+  margin-top: 80px;
+  margin-left: -30px;
+  padding: 5px; 
+  border: 1px solid #ccc;
+  border-radius: 3px; 
+  width: 100%;
+ 
+}
+
+.form-rowy input{
+  margin-top: 80px;
+}
+
+.cc button[type="submit"]
+ {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px; /* Adjust margin as needed */
+  background-color: #ffc400; /* Example background color */
+  color: #fff; /* Example text color */
+  text-decoration: none;
+  border: none;
+  border-radius: 5px; /* Example border radius */
+  cursor: pointer;
+  width: 100%;
+}
+
+.cc button[type="submit"]:hover,
+.cc a.cancel:hover {
+  background-color: #0056b3; /* Example hover background color */
+}
+/*   
+.cc button[type="submit"] {
+  background-color: #f09c02;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cc button[type="submit"]:hover {
+  background-color: #0056b3;
+} */
+
+.cancel{
+  margin-top: 5px;
+  float: right;
+  color: #038eff;
+}

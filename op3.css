@@ -1,4 +1,31 @@
-* {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* * {
     box-sizing: border-box;
   }
   
@@ -18,11 +45,16 @@
   
   .container {
     display: flex;
+    margin-top: 30px;
+    border: 1px solid black;
+    height: 550px;
+    width: 30%;
+    margin-left: 15%;
   }
   
   .sidebar {
     width: 250px;
-    background-color: #919191;
+    background-color: #bebebe;
     color: #080808;
     padding: 20px;
   }
@@ -56,9 +88,21 @@
     margin-right: 10px;
   }
   
+
+ 
+.powerby {
+  margin-top: 20px;
+}
+
+.powerby i {
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+
   .main-content {
     flex: 1;
-    padding: 20px;
+    padding: 20px; 
   }
   
   .main-content header {
@@ -73,106 +117,100 @@
     margin-bottom: 40px;
   }
   
-  .main-content h5 {
-    color: #333;
+  .main-content button {
+    border: none;
     margin-bottom: 10px;
-    
-
+    border-bottom: 2px solid #038eff;  
   }
   
   .main-content p {
     color: #555;
   }
-  
-  /* Personal Details */
-  .pd label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  
-  .pd input[type="text"],
-  .pd input[type="email"],
-  .pd input[type="tel"],
-  .pd input[type="number"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .pd button[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .pd button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Credit/Debit Card */
 
+  .merchantname {
+    position: absolute;
+    top: 40px;
+    right: 280px;
+    padding: 20px; 
+    background-color: #f0f0f0;
+    border: 1px solid #ececec; 
+    border-radius: 5px 5px 0 0; 
+    width: 200px;
+  }
+  .merchantname p{
+    font-size: 13px;
+    margin-left: -13px;
+  }
+  .merchantname h3 {
+   margin-top: -10px;
+   margin-left: -13px;
+   font-size: 13px;
+
+  }
+  
+  .totalamount {
+    position: absolute;
+    top: 124px;
+    right: 280px;
+    background-color: #82c5daad;
+    font-size: 12px;
+    padding: 20px;
+    border-radius:0 0 5px 5px;
+    margin-left: -10px;
+  }
+  
+
+  
+  
 
   .cc-form{
-    width: 40%;
+    margin-top: 30px;
+    width: 60%;
     height: 50%;
   }
 
-  .form-row {
-    display: flex;
-    align-items: center;
+  .cc label {
+    display: inline;
+    margin-bottom: 15px;
+    font-weight: bold; 
   }
   
-  .cvv{
-
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-  }
-
-  .form-rowm,
-  .form-rowy {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-
-  .cd label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  
-  .cd input[type="text"],
-  .cd input[type="number"] {
+  .cc input
+   {
     width: 100%;
     padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
   }
+
+   .year{
+    margin-top: 23px;
+   }
   
-  .cd button[type="submit"] {
-    background-color: #f09c02;
-    color: #fff;
-    border: none;
+  .cc button[type="submit"]
+   {
+    display: inline-block;
     padding: 10px 20px;
-    border-radius: 5px;
+    margin-top: 10px; 
+    background-color: #ffc400; 
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px; 
     cursor: pointer;
     width: 100%;
   }
   
-  .cd button[type="submit"]:hover {
-    background-color: #0056b3;
+  .cc button[type="submit"]:hover,
+  .cc a.cancel:hover {
+    background-color: #0056b3; 
   }
 
+
   .cancel{
+    margin-top: 5px;
     float: right;
     color: #038eff;
   }
-  
+   */
